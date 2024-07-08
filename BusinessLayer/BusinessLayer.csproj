@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\" />
+    <Folder Include="FluentValidation\" />
   </ItemGroup>
 
 </Project>
