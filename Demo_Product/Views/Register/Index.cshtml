@@ -48,7 +48,7 @@
                                             <span asp-validation-for="Email"></span>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" name="UserName" id="inputEmail" type="email" placeholder="kullanici adiniz" />
+                                            <input class="form-control" name="UserName" id="inputEmail" type="text" placeholder="kullanici adiniz" />
                                             <label for="inputEmail">Kullanıcı adınız</label>
                                             <span asp-validation-for="UserName"></span>
                                         </div>
@@ -68,6 +68,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
                                         <button class="btn btn-primary btn-block">Hesap Oluştur</button>
                                     </form>
                                 </div>
