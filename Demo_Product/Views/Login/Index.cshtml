@@ -24,29 +24,29 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Login</h3></div>
+                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Giriş Paneli</h3></div>
                                 <div class="card-body">
-                                    <form>
+                                    <form method="post">
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                            <label for="inputEmail">Email address</label>
+                                            <input class="form-control" id="inputEmail" type="text" asp-for="Username"/>
+                                            <label for="inputEmail">E-posta adresi</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" id="inputPassword" type="password" placeholder="Password" />
-                                            <label for="inputPassword">Password</label>
+                                            <input class="form-control" id="inputPassword" type="password" asp-for="Password"/>
+                                            <label for="inputPassword">Parola</label>
                                         </div>
                                         <div class="form-check mb-3">
                                             <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
-                                            <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
+                                            <label class="form-check-label" for="inputRememberPassword">Beni Hatırla</label>
                                         </div>
                                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                            <a class="small" href="password.html">Forgot Password?</a>
-                                            <a class="btn btn-primary" href="index.html">Login</a>
+                                            <a class="small" href="password.html">Şifreni mi unuttun? </a>
+                                            <button class="btn btn-primary">Giriş Yap</button>
                                         </div>
                                     </form>
                                 </div>
                                 <div class="card-footer text-center py-3">
-                                    <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
+                                    <div class="small"><a href="/Register/Index">Hesabın yok mu? Hesap oluştur</a></div>
                                 </div>
                             </div>
                         </div>
@@ -58,11 +58,11 @@
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2023</div>
+                        <div class="text-muted">Copyright &copy; Core Proje @DateTime.Now.Year </div>
                         <div>
-                            <a href="#">Privacy Policy</a>
+                            <a href="#">Gizlilik </a>
                             &middot;
-                            <a href="#">Terms &amp; Conditions</a>
+                            <a href="#">Koşullar &amp Şartlar</a>
                         </div>
                     </div>
                 </div>
